@@ -7,7 +7,8 @@ body .Tabela {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 150px;
+  height: 500px;
 }
 body .Tabela td {
   width: 150px;
@@ -20,4 +21,23 @@ body .Tabela td:hover {
   background-color: rgba(65, 105, 225, 0.5);
   transition: 500ms;
   cursor: pointer;
+}
+body .punktacja {
+  display: flex;
+  align-items: left;
+  margin-top: 100px;
+  justify-content: center;
+  height: 100px;
+}
+body .punktacja .punktya {
+  width: 400px;
+  text-align: center;
+  font-size: 40px;
+  color: royalblue;
+}
+body .punktacja .punktyb {
+  text-align: center;
+  width: 400px;
+  font-size: 40px;
+  color: greenyellow;
 }/*# sourceMappingURL=style.css.map */

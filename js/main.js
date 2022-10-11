@@ -1,6 +1,8 @@
 var pola = ['pole1', 'pole2', 'pole3', 'pole4', 'pole5', 'pole6', 'pole7', 'pole8', 'pole9']
 var tura = 0
 var koniec = false
+var gracz1 = 0
+var gracz2 = 0
 
 pola[0] = '-'
 pola[1] = '-'
@@ -155,7 +157,9 @@ function sprawdz_gre() {
 	sprawdzenie_y()
 	sprawdzenie_remis()
 	if (koniec == true) {
-		document.getElementById('plansza').innerHTML = '<div>Koniec</div>'
+		document.getElementById('gracz1').innerHTML = '<p>Gracz1: ' + gracz1 + '</p>'
+		document.getElementById('gracz2').innerHTML = '<p>Gracz2: ' + gracz2 + '</p>'
+		reset()
 	}
 }
 
@@ -163,70 +167,86 @@ function sprawdz_gre() {
 function sprawdzenie_x() {
 	if (pola[0] == 'X' && pola[1] == 'X' && pola[2] == 'X') {
 		alert('koniec gry1')
+		gracz1++
 		koniec = true
 	}
 	if (pola[3] == 'X' && pola[4] == 'X' && pola[5] == 'X') {
 		alert('koniec gry1')
+		gracz1++
 		koniec = true
 	}
 	if (pola[6] == 'X' && pola[7] == 'X' && pola[8] == 'X') {
 		alert('koniec gry1')
+		gracz1++
 		koniec = true
 	}
 	if (pola[0] == 'X' && pola[3] == 'X' && pola[6] == 'X') {
 		alert('koniec gry1')
+		gracz1++
 		koniec = true
 	}
 	if (pola[1] == 'X' && pola[4] == 'X' && pola[7] == 'X') {
 		alert('koniec gry1')
+		gracz1++
 		koniec = true
 	}
 	if (pola[2] == 'X' && pola[5] == 'X' && pola[8] == 'X') {
 		alert('koniec gry1')
+		gracz1++
 		koniec = true
 	}
 	if (pola[0] == 'X' && pola[4] == 'X' && pola[8] == 'X') {
 		alert('koniec gry1')
+		gracz1++
 		koniec = true
 	}
 	if (pola[2] == 'X' && pola[4] == 'X' && pola[6] == 'X') {
 		alert('koniec gry1')
+		gracz1++
 		koniec = true
 	}
 }
 
-/*Sprawdzenie wygranej Y*/
+/*Sprawdzenie wygranej O*/
 function sprawdzenie_y() {
 	if (pola[0] == 'O' && pola[1] == 'O' && pola[2] == 'O') {
 		alert('koniec gry1')
+		gracz2++
 		koniec = true
 	}
 	if (pola[3] == 'O' && pola[4] == 'O' && pola[5] == 'O') {
 		alert('koniec gry1')
+		gracz2++
 		koniec = true
 	}
 	if (pola[6] == 'O' && pola[7] == 'O' && pola[8] == 'O') {
 		alert('koniec gry1')
+		gracz2++
 		koniec = true
 	}
 	if (pola[0] == 'O' && pola[3] == 'O' && pola[6] == 'O') {
 		alert('koniec gry1')
+		gracz2++
 		koniec = true
 	}
 	if (pola[1] == 'O' && pola[4] == 'O' && pola[7] == 'O') {
 		alert('koniec gry1')
+		gracz2++
 		koniec = true
 	}
 	if (pola[2] == 'O' && pola[5] == 'O' && pola[8] == 'O') {
 		alert('koniec gry1')
+		gracz2++
 		koniec = true
 	}
 	if (pola[0] == 'O' && pola[4] == 'O' && pola[8] == 'O') {
 		alert('koniec gry1')
+		gracz2++
 		koniec = true
 	}
 	if (pola[2] == 'O' && pola[4] == 'O' && pola[6] == 'O') {
 		alert('koniec gry1')
+		gracz2++
 		koniec = true
 	}
 }
@@ -236,4 +256,28 @@ function sprawdzenie_remis() {
 	if (tura == 8) {
 		alert('koniec gry - remis!')
 	}
+}
+
+/*Funkcja resetująca grę*/
+function reset() {
+	tura = 0
+	koniec = false
+	pola[0] = '-'
+	pola[1] = '-'
+	pola[2] = '-'
+	pola[3] = '-'
+	pola[4] = '-'
+	pola[5] = '-'
+	pola[6] = '-'
+	pola[7] = '-'
+	pola[8] = '-'
+	document.getElementById('trd1').innerHTML = '<div></div>'
+	document.getElementById('trd2').innerHTML = '<div></div>'
+	document.getElementById('trd3').innerHTML = '<div></div>'
+	document.getElementById('trd4').innerHTML = '<div></div>'
+	document.getElementById('trd5').innerHTML = '<div></div>'
+	document.getElementById('trd6').innerHTML = '<div></div>'
+	document.getElementById('trd7').innerHTML = '<div></div>'
+	document.getElementById('trd8').innerHTML = '<div></div>'
+	document.getElementById('trd9').innerHTML = '<div></div>'
 }

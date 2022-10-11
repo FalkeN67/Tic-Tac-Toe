@@ -6,7 +6,8 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-top: 200px;
+		margin-top: 150px;
+		height: 500px;
 
 		td {
 			width: 150px;
@@ -19,6 +20,25 @@ body {
 			background-color: rgba(65, 105, 225, 0.5);
 			transition: 500ms;
 			cursor: pointer;
+		}
+	}
+	.punktacja {
+		display: flex;
+		align-items: left;
+		margin-top: 100px;
+		justify-content: center;
+		height: 100px;
+		.punktya {
+			width: 400px;
+			text-align: center;
+			font-size: 40px;
+			color: royalblue;
+		}
+		.punktyb {
+			text-align: center;
+			width: 400px;
+			font-size: 40px;
+			color: greenyellow;
 		}
 	}
 }
