@@ -1,0 +1,23 @@
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: monospace;
+}
+body .Tabela {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+body .Tabela td {
+  width: 150px;
+  height: 150px;
+  border: 2px solid whitesmoke;
+  text-align: center;
+  font-size: 100px;
+}
+body .Tabela td:hover {
+  background-color: whitesmoke;
+  transition: 500ms;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
