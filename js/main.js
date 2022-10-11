@@ -24,3 +24,41 @@ function zamiana1() {
 		alert('Miejsce jest już zajęte!')
 	}
 }
+
+/*Sprawdzenie wygranej X*/
+function sprawdzenie_x() {
+	if (pola[0] == 'X' && pola[1] == 'X' && pola[2] == 'X') {
+		alert('koniec gry1')
+	}
+	if (pola[3] == 'X' && pola[4] == 'X' && pola[5] == 'X') {
+		alert('koniec gry1')
+	}
+	if (pola[6] == 'X' && pola[7] == 'X' && pola[8] == 'X') {
+		alert('koniec gry1')
+	}
+	if (pola[0] == 'X' && pola[4] == 'X' && pola[8] == 'X') {
+		alert('koniec gry1')
+	}
+	if (pola[2] == 'X' && pola[4] == 'X' && pola[6] == 'X') {
+		alert('koniec gry1')
+	}
+}
+
+/*Sprawdzenie wygranej Y*/
+function sprawdzenie_y() {
+	if (pola[0] == 'O' && pola[1] == 'O' && pola[2] == 'O') {
+		alert('koniec gry1')
+	}
+	if (pola[3] == 'O' && pola[4] == 'O' && pola[5] == 'O') {
+		alert('koniec gry1')
+	}
+	if (pola[6] == 'O' && pola[7] == 'O' && pola[8] == 'O') {
+		alert('koniec gry1')
+	}
+	if (pola[0] == 'O' && pola[4] == 'O' && pola[8] == 'O') {
+		alert('koniec gry1')
+	}
+	if (pola[2] == 'O' && pola[4] == 'O' && pola[6] == 'O') {
+		alert('koniec gry1')
+	}
+}
