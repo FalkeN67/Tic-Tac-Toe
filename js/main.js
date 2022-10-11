@@ -253,14 +253,19 @@ function sprawdzenie_y() {
 
 /*Sprawdzenie remisu*/
 function sprawdzenie_remis() {
-	if (tura == 8) {
+	if (tura == 9) {
 		alert('koniec gry - remis!')
+		koniec = true
 	}
 }
 
 /*Funkcja resetująca grę*/
 function reset() {
-	tura = 0
+	if (tura % 2 == 0) {
+		tura = 0
+	} else {
+		tura = 1
+	}
 	koniec = false
 	pola[0] = '-'
 	pola[1] = '-'
