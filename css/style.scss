@@ -2,11 +2,21 @@ body {
 	background-color: rgba(0, 0, 0, 0.8);
 	color: white;
 	font-family: monospace;
+	.Header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 50px;
+		color: grey;
+	}
+	.Header:hover {
+		cursor: default;
+	}
 	.Tabela {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-top: 150px;
+		margin-top: 20px;
 		height: 500px;
 
 		td {
@@ -25,20 +35,27 @@ body {
 	.punktacja {
 		display: flex;
 		align-items: left;
-		margin-top: 100px;
+		margin-top: 50px;
 		justify-content: center;
 		height: 100px;
+
 		.punktya {
 			width: 400px;
 			text-align: center;
-			font-size: 40px;
-			color: royalblue;
+			font-size: 35px;
+			color: rgba(65, 105, 225, 0.5);
 		}
 		.punktyb {
 			text-align: center;
 			width: 400px;
-			font-size: 40px;
-			color: greenyellow;
+			font-size: 35px;
+			color: rgba(172, 255, 47, 0.5);
+		}
+		.punktya:hover {
+			cursor: default;
+		}
+		.punktyb:hover {
+			cursor: default;
 		}
 	}
 }

@@ -3,11 +3,21 @@ body {
   color: white;
   font-family: monospace;
 }
+body .Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: grey;
+}
+body .Header:hover {
+  cursor: default;
+}
 body .Tabela {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 20px;
   height: 500px;
 }
 body .Tabela td {
@@ -25,19 +35,25 @@ body .Tabela td:hover {
 body .punktacja {
   display: flex;
   align-items: left;
-  margin-top: 100px;
+  margin-top: 50px;
   justify-content: center;
   height: 100px;
 }
 body .punktacja .punktya {
   width: 400px;
   text-align: center;
-  font-size: 40px;
-  color: royalblue;
+  font-size: 35px;
+  color: rgba(65, 105, 225, 0.5);
 }
 body .punktacja .punktyb {
   text-align: center;
   width: 400px;
-  font-size: 40px;
-  color: greenyellow;
+  font-size: 35px;
+  color: rgba(172, 255, 47, 0.5);
+}
+body .punktacja .punktya:hover {
+  cursor: default;
+}
+body .punktacja .punktyb:hover {
+  cursor: default;
 }/*# sourceMappingURL=style.css.map */

@@ -157,8 +157,8 @@ function sprawdz_gre() {
 	sprawdzenie_y()
 	sprawdzenie_remis()
 	if (koniec == true) {
-		document.getElementById('gracz1').innerHTML = '<p>Gracz1: ' + gracz1 + '</p>'
-		document.getElementById('gracz2').innerHTML = '<p>Gracz2: ' + gracz2 + '</p>'
+		document.getElementById('gracz1').innerHTML = '<p>Player1: ' + gracz1 + '</p>'
+		document.getElementById('gracz2').innerHTML = '<p>Player2: ' + gracz2 + '</p>'
 		reset()
 	}
 }
@@ -166,42 +166,42 @@ function sprawdz_gre() {
 /*Sprawdzenie wygranej X*/
 function sprawdzenie_x() {
 	if (pola[0] == 'X' && pola[1] == 'X' && pola[2] == 'X') {
-		alert('koniec gry1')
+		alert('Player 1 is the winner!')
 		gracz1++
 		koniec = true
 	}
 	if (pola[3] == 'X' && pola[4] == 'X' && pola[5] == 'X') {
-		alert('koniec gry1')
+		alert('Player 1 is the winner!')
 		gracz1++
 		koniec = true
 	}
 	if (pola[6] == 'X' && pola[7] == 'X' && pola[8] == 'X') {
-		alert('koniec gry1')
+		alert('Player 1 is the winner!')
 		gracz1++
 		koniec = true
 	}
 	if (pola[0] == 'X' && pola[3] == 'X' && pola[6] == 'X') {
-		alert('koniec gry1')
+		alert('Player 1 is the winner!')
 		gracz1++
 		koniec = true
 	}
 	if (pola[1] == 'X' && pola[4] == 'X' && pola[7] == 'X') {
-		alert('koniec gry1')
+		alert('Player 1 is the winner!')
 		gracz1++
 		koniec = true
 	}
 	if (pola[2] == 'X' && pola[5] == 'X' && pola[8] == 'X') {
-		alert('koniec gry1')
+		alert('Player 1 is the winner!')
 		gracz1++
 		koniec = true
 	}
 	if (pola[0] == 'X' && pola[4] == 'X' && pola[8] == 'X') {
-		alert('koniec gry1')
+		alert('Player 1 is the winner!')
 		gracz1++
 		koniec = true
 	}
 	if (pola[2] == 'X' && pola[4] == 'X' && pola[6] == 'X') {
-		alert('koniec gry1')
+		alert('Player 1 is the winner!')
 		gracz1++
 		koniec = true
 	}
@@ -210,42 +210,42 @@ function sprawdzenie_x() {
 /*Sprawdzenie wygranej O*/
 function sprawdzenie_y() {
 	if (pola[0] == 'O' && pola[1] == 'O' && pola[2] == 'O') {
-		alert('koniec gry1')
+		alert('Player 2 is the winner!')
 		gracz2++
 		koniec = true
 	}
 	if (pola[3] == 'O' && pola[4] == 'O' && pola[5] == 'O') {
-		alert('koniec gry1')
+		alert('Player 2 is the winner!')
 		gracz2++
 		koniec = true
 	}
 	if (pola[6] == 'O' && pola[7] == 'O' && pola[8] == 'O') {
-		alert('koniec gry1')
+		alert('Player 2 is the winner!')
 		gracz2++
 		koniec = true
 	}
 	if (pola[0] == 'O' && pola[3] == 'O' && pola[6] == 'O') {
-		alert('koniec gry1')
+		alert('Player 2 is the winner!')
 		gracz2++
 		koniec = true
 	}
 	if (pola[1] == 'O' && pola[4] == 'O' && pola[7] == 'O') {
-		alert('koniec gry1')
+		alert('Player 2 is the winner!')
 		gracz2++
 		koniec = true
 	}
 	if (pola[2] == 'O' && pola[5] == 'O' && pola[8] == 'O') {
-		alert('koniec gry1')
+		alert('Player 2 is the winner!')
 		gracz2++
 		koniec = true
 	}
 	if (pola[0] == 'O' && pola[4] == 'O' && pola[8] == 'O') {
-		alert('koniec gry1')
+		alert('Player 2 is the winner!')
 		gracz2++
 		koniec = true
 	}
 	if (pola[2] == 'O' && pola[4] == 'O' && pola[6] == 'O') {
-		alert('koniec gry1')
+		alert('Player 2 is the winner!')
 		gracz2++
 		koniec = true
 	}
@@ -254,7 +254,7 @@ function sprawdzenie_y() {
 /*Sprawdzenie remisu*/
 function sprawdzenie_remis() {
 	if (tura == 9) {
-		alert('koniec gry - remis!')
+		alert('Game over - draw!')
 		koniec = true
 	}
 }
